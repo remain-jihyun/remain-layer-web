@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/svg+xml" href="/remain-layer-web/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>리메인레이어 REMAIN LAYER</title>
+    <!-- 테마: 저장값 → 없으면 다크(검정)로 시작. 첫 페인트 전에 적용해 깜빡임 방지 -->
+    <script>
+      (function () {
+        var t = null
+        try { t = localStorage.getItem('rl-theme') } catch (e) {}
+        if (t !== 'dark' && t !== 'light') t = 'dark'
+        document.documentElement.dataset.theme = t
+      })()
+    </script>
+    <script type="module" crossorigin src="/remain-layer-web/assets/index-OMIJNgM1.js"></script>
+    <link rel="stylesheet" crossorigin href="/remain-layer-web/assets/index-CdR4eU7B.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
